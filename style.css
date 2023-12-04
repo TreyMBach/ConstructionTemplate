@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2E5A88;
+    color: silver;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+
+#services {
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+#services h2 {
+    color: gray;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+
+/* FOOTER CONTAINER */
+footer {
+    background-color: #2E5A88; /* Adjust to match the exact color of your footer */
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .contact-info, .email-address, .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo img, .certifications img {
+    max-width: 100px; /* Adjust as necessary */
+    margin: 0 10px;
+  }
+  

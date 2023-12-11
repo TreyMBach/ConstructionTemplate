@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
 }
 
 /* HEADER SECTION */
@@ -131,13 +132,6 @@ body, html {
   display: block;
 }
 
-/* Ensure images stack on smaller screens */
-@media (max-width: 768px) {
-  .portfolio-item {
-      flex-basis: calc(50% - 10px);
-  }
-}
-
 
 
 
@@ -171,13 +165,50 @@ body, html {
   margin-right: 8px;
 }
 
-/* Responsive layout for smaller screens */
+/* RESPONSIVE LAYOUTS */
 @media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
+  .site-header, .hero, .services, .about, .portfolio, .footer {
+      padding-left: 10px;
+      padding-right: 10px;
   }
-  
+
+  /* HEADER LAYOUT */
+  .site-header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .logo-container {
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+
+  .header-title {
+      font-size: 1.5rem;
+  }
+
+  /* SERVICE LAYOUT */
+  .service, .portfolio-item {
+      width: 100%; /* Adjust width for mobile */
+      box-sizing: border-box; /* Include padding and border in the element's width */
+  }
+
+  /* PORTFOLIO LAYOUT */
+  .portfolio-grid {
+      justify-content: space-between;
+  }
+
+  .portfolio-item {
+      flex-basis: 100%; /* Take full width of the parent container */
+      margin-bottom: 20px; /* Add space between items */
+  }
+
+  /* FOOTER LAYOUT */
+  .footer-content {
+      flex-direction: column;
+  }
+
   .footer-section {
-    margin-bottom: 10px;
+      margin-bottom: 10px;
   }
 }

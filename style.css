@@ -4,6 +4,35 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+/* HEADER SECTION */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  background-image: url('./Images/background.png'); /* Replace with your image URL */
+  background-size: cover;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  background-color: grey;
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+.header-title {
+  flex: 4;
+  text-align: center;
+  font-size: 2em; /* Adjust as needed */
+}
+
 .landing {
     text-align: center;
 }
@@ -16,21 +45,6 @@ body, html {
 
 .logo {
     width: 150px;
-}
-
-.navigation ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navigation ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navigation a {
-    color: #fff;
-    text-decoration: none;
 }
 
 .hero {
@@ -60,38 +74,110 @@ body, html {
     padding: 20px 0;
 }
 
-  
-  .footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+/* SERVICE SECTION */
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  border: grey solid 1px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px; /* Adjust width as needed */
+}
+
+.service img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.portfolio h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.portfolio-item {
+  flex-basis: calc(25% - 10px); /* Subtract gap from width */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure images stack on smaller screens */
+@media (max-width: 768px) {
+  .portfolio-item {
+      flex-basis: calc(50% - 10px);
   }
+}
+
+
+
+
+/* FOOTER SECTION */
   
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section h2,
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section img {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
   }
   
-  .footer-section h2,
-  .footer-section p {
-    margin: 5px 0;
+  .footer-section {
+    margin-bottom: 10px;
   }
-  
-  .footer-section img {
-    width: 20px;
-    height: auto;
-    margin-right: 8px;
-  }
-  
-  /* Responsive layout for smaller screens */
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-    }
-    
-    .footer-section {
-      margin-bottom: 10px;
-    }
-  }
+}

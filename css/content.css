@@ -1,0 +1,60 @@
+.content-wrapper {
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
+}
+
+.content-1,
+.content-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px; /* Space between the content blocks */
+}
+
+.content-1 .left-column,
+.content-2 .right-column {
+    flex: 1;
+    order: 1; /* Image on the left for content-1, on the right for content-2 */
+}
+
+.content-1 .right-column,
+.content-2 .left-column {
+    flex: 1;
+    order: 2; /* Text on the right for content-1, on the left for content-2 */
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image takes up the entire block */
+}
+
+.text-block {
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add a subtle shadow */
+}
+
+.learn-more-button {
+    padding: 10px 20px;
+    background-color: blue; /* Green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.learn-more-button:hover {
+    background-color: darkblue; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+    .content-1 .left-column,
+    .content-1 .right-column,
+    .content-2 .left-column,
+    .content-2 .right-column {
+        flex-basis: 100%;
+        order: initial; /* Reset the order on smaller screens */
+    }
+}

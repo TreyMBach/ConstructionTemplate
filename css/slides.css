@@ -83,8 +83,14 @@
     .slider {
         height: 40vh;
     }
+    .slide-quote {
+        padding-top: 10px;
+        top: 40%;
+    }
     .slide-quote p {
+        color: white;
         font-size: 20px;
+        margin: bottom
     }
 }
 
@@ -92,7 +98,15 @@
     .slider{
         height: 30vh;
     }
+    .slide-quote {
+        top: 30%;
+    }
     .slide-quote p {
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    .slide-quote button {
+        padding: 5px 10px;
         font-size: 10px;
     }
 }

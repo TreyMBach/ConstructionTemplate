@@ -37,3 +37,18 @@
 .navbar-links a:hover {
     color: #aaaaaa;
 }
+
+@media (max-width: 768px){
+    .logo img {
+        padding: 40px;
+        height: 40px;
+    }
+    .navbar-links ul,
+    .navbar-links a {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+}
+    

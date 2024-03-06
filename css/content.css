@@ -46,7 +46,7 @@
 }
 
 .learn-more-button:hover {
-    background-color: darkblue; /* Darker green on hover */
+    background-color: blue; /* Darker green on hover */
 }
 
 @media (max-width: 768px) {

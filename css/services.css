@@ -1,0 +1,25 @@
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .service {
+    text-align: center;
+  }
+  
+  .service img {
+    width: 80px; /* You may adjust the width as necessary */
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px){
+    .services-container {
+      flex-direction: column;
+    }
+  }
+  

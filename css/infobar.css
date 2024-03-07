@@ -2,8 +2,9 @@
     background-color: #f8f8f8;
     color: #333;
     text-align: center;
-    padding: 50px;
-    position: relative;
+    padding: 1rem;
+    /* position: relative; */
+    text-align: center;
 }
 
 .info-text {

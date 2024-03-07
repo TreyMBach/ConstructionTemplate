@@ -1,6 +1,7 @@
 .slider {
     width: 100%;
     height: 65vh;
+    position: relative;
     overflow: hidden;
 }
 
@@ -15,8 +16,8 @@
 
 .slide img {
     width: 100%;
-    height: 65vh;
-    display: block;
+    height: auto;
+    /* display: block; */
 }
 
 /* Slide Quote */

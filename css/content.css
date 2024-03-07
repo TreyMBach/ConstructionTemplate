@@ -7,6 +7,8 @@
 .content-2 {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 20px; /* Space between the content blocks */
 }
@@ -37,7 +39,7 @@
 
 .learn-more-button {
     padding: 10px 20px;
-    background-color: blue; /* Green background */
+    background-color: blue; /* Blue background */
     color: white;
     border: none;
     cursor: pointer;
